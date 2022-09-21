@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>tugas video  - </h2>
+    <p>
+        <button onclick="playvid()" type="button">play video</button>
+        <button onclick="pausevid()" type="button">pause video</button>
+        <button onclick="durationvid()" type="button">duration video</button>
+    </p>
+    <video width="1080" id="myvideo">
+            <source src="./mov_bbb.mp4" type="video/mp4" >
+    </video>
+</body>
+<script>
+    var vid = document.getElementById("myvideo");
+    function durationvid(){
+        alert(vid.duration)
+    }
+
+function playvid() {
+    vid.play();
+    vid.loop = true;
+}
+
+function pausevid() {
+    vid.pause();
+
+}
+
+</script>
+</html>
